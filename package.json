@@ -1,12 +1,23 @@
 {
   "name": "ltl-js",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Linear Temporal Logic (LTL) parser in JavaScript",
+  "files": [
+    "src",
+    "generated"
+  ],
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": ["ltl", "linear temporal logic", "parser", "javascript"],
+  "author": "Ciprian TEODOROV",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "antlr4": "4.13.1-patch-1"
+  }
 }
