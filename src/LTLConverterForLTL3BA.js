@@ -1,5 +1,13 @@
 import { LTLVisitor } from "./LTLSyntaxModel.js";
 
+export function transformToLTL3BA(ltlSyntax) {
+    const converter = new LTLConverterForLTL3BA();
+    return {
+        expression: ltlSyntax.accept(converter, null),
+        name2atom: converter.name2atom,
+    };
+}
+
 export class LTLConverterForLTL3BA extends LTLVisitor {
     name2atom;
     atom2name;
