@@ -1,0 +1,1 @@
+antlr4 -Dlanguage=JavaScript -o generated grammar/LTL.g4
